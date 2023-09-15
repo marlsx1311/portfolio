@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+/*   font-family: 'Poppins', sans-serif;  */
+*{
+    padding: 0;
+    margin: 0;
+}
+:root{
+    --background-green-clair: #EDFFEC;
+    --background-blue-clair: #E6FFFD;
+    --background-red-clair: #ED2B2A;
+}
+body{
+    width: 100%;
+    background:var(--background-blue-clair);
+    font-family: 'Poppins', sans-serif;
+}
+.page{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 15% 30% 55%;
+    grid-template-areas: "mode  color"
+                         "info  skill"
+                         "info  project";
+}
+
+.dart-mode{
+    grid-area: mode;
+    display: flex;
+    align-items: center;
+    background: var(--background-green-clair);
+    gap: 5px;
+    padding: 10px 0 0 10px;
+}
+.dart-mode img{
+    width: 30px;
+}
